@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Snippets inherit  menu -->
+    <template id="inherit_snippets" inherit_id="web_editor.snippets">
+        <xpath expr="//div[@id='o_scroll']/t[@id='default_snippets']" position="after">
+            <div id="snippet_animate" class="o_panel">
+                <div class="o_panel_header">Animated Snippet</div>
+                <div class="o_panel_body">
+                    <t t-snippet="animated_snippet.animated_square"
+                       t-thumbnail="/animated_snippet/static/src/img/a_feature_thumb.svg">
+                        <keywords>Animated square</keywords>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
